@@ -25,6 +25,8 @@ public class LabU1HerenciaPolimorfismo {
         Media movie1 = new Movie("Titanic", "James Cameron", 180);
         Media book1 = new Book("Java How To Program", "Deitel", 500);
         Media music1 = new Music("Imagine", "John Lennon", "Rock");
+        Media radio1 = new Radio("Who do you think you are", "Calibre 50", "98.3 FM");
+        
         
         // TODO 25: Crea un objeto de tipo MediaLibrary llamado mediaLibrary
          MediaLibrary  MediaLibrary1 = new  MediaLibrary();
@@ -36,7 +38,7 @@ public class LabU1HerenciaPolimorfismo {
         MediaLibrary1.addLibrary(movie1);
         MediaLibrary1.addLibrary(book1);
         MediaLibrary1.addLibrary(music1);
-        
+        MediaLibrary1.addLibrary(radio1);
         
         
         
