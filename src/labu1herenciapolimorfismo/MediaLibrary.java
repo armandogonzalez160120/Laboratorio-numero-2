@@ -4,6 +4,8 @@
  */
 package labu1herenciapolimorfismo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author alopezorozco
@@ -13,12 +15,15 @@ public class MediaLibrary {
     // El nombre del campo será de tipo Media
     // Código a escribir: private ArrayList<Media> medios;
     // Importa el paquete java.util.ArrayList;
-    
+    private ArrayList<Media> medios;
   
     // TODO 21: Escribe el constructor de la clase e inicializa
     // el ArrayList creado anteriormente
     // Escribe este código en el constructor: medios = new ArrayList<>();
     // Nota: el constructor no recibe parámetros
+     public MediaLibrary() {
+        medios = new ArrayList<>();
+    }
 
     
     // TODO 22: Ahora crea un método que se llame addLibrary
@@ -29,6 +34,10 @@ public class MediaLibrary {
     // para adicionar elementos al ArrayList escribe
     // el nombre del campo de tipo arraylist y usa el método add
     // código dentro del método: medios.add(mediaItem);
+     public void addLibrary(Media mediaItem)
+     {
+         medios.add(mediaItem);
+     }
 
     
     // TODO 23: Ahora crearemos un método que nos permita
@@ -48,4 +57,13 @@ public class MediaLibrary {
          }    
        }
     */
+    public void playAllItems(){
+        if (medios.isEmpty()){
+         System.out.println("No hay medios en la lista");
+       }else{
+         for(Media media : medios){
+             media.play();
+         }    
+       }
+    }
 }
